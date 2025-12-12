@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>To Do List - Juan</title>
+</head>
+<body>
+    <header>
+        <h1>Todo List - Juan</h1>
+    </header>
+
+    <main>
+        <div class="flex">
+            <div class="baris_1">
+                <input type="text" id="input_tugas" placeholder="Masukkan tugas anda">
+                <button onclick="tambahTugas()">Tambah</button>
+            </div>
+            <div class="baris_2">
+                <input type="date" id="input_tanggal">
+                <button onclick="hapusTugas()">Hapus Semua</button>
+            </div>
+            <div class="filter_section">
+                <input type="date" id="filter_tanggal">
+                <button onclick="filterTanggal()">Filter</button>
+            </div>
+            <div class="output_section">
+                <div class="parent">
+                    <h2>Jadwal Tugas Anda</h2>
+                <div class="head">
+                    <h3>Tugas</h3>
+                    <h3>Tanggal</h3>
+                </div>
+                <ul id="list_tugas" class="list"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy Juan Adi Dharma
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
